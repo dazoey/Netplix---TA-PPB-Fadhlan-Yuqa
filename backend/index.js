@@ -8,7 +8,23 @@ const supabase = require('./supabaseClient'); // Import Supabase client
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-app.use(cors());
+// CORS Configuration
+const whitelist = [
+  'http://localhost:3000', // For local frontend development
+  'https://netplix-ta-ppb-fadhlan-yuqa.vercel.app', // User's Vercel frontend
+  // Add the future URL of your deployed backend service here if needed
+];
+const corsOptions = {
+  origin: function (origin, callback) {
+    if (!origin || whitelist.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 
 // Root endpoint
