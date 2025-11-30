@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getTrendingVideos } from '../api/tmdb';  // Pastikan mengimpor getTrendingVideos
+import { getTrendingVideos } from '../api/api';  // Pastikan mengimpor getTrendingVideos
 import './Banner.css';
 
 const Banner = () => {

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getMoviesByCategory } from '../api/tmdb';
+import { getMoviesByCategory } from '../api/api';
 import './Row.css';
 
 const Row = ({ title, category }) => {

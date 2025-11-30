@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getMoviesByCategory } from '../api/tmdb'; // Import API function to fetch movies by category
+import { getMoviesByCategory } from '../api/api'; // Import API function to fetch movies by category
 import { Link } from 'react-router-dom';
 import './Home.css'; // Styling for Home page
 

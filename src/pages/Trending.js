@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { getMarvelMovies } from '../api/tmdb';  // Import the function to fetch movies
+import { getMarvelMovies } from '../api/api';  // Import the function to fetch movies
 import './Trending.css';
 
 const Trending = () => {
