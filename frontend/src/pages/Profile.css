@@ -1,100 +1,146 @@
 /* src/pages/Profile.css */
 
 .profile-container {
-    background-color: #141414;
-    color: white;
-    padding: 30px;
-    height: 100vh;
-    overflow-y: auto;
-  }
-  
-  .profile-header {
-    border-bottom: 1px solid #444;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .profile-title {
-    font-size: 32px;
-    font-weight: bold;
-    color: #e5e5e5;
-  }
-  
-  .profile-details {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-  }
-  
-  .profile-left {
-    flex: 1;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .profile-avatar {
-    flex-shrink: 0;
-  }
-  
-  .avatar-img {
-    width: 130px;
-    height: 130px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 2px solid #e50914;
-  }
-  
-  .profile-info {
-    flex-grow: 1;
-  }
-  
-  .username {
-    font-size: 28px;
-    font-weight: bold;
-    color: #e5e5e5;
-  }
-  
-  .email {
-    font-size: 18px;
-    color: #b3b3b3;
-  }
-  
-  .profile-right {
-    flex: 1;
-  }
-  
-  .plan-section {
-    margin-bottom: 30px;
-  }
-  
-  .plan-title {
-    font-size: 24px;
-    color: #e5e5e5;
-    font-weight: bold;
-  }
-  
-  .plan-type {
-    font-size: 20px;
-    color: #999;
-  }
-  
-  .plan-end {
-    font-size: 16px;
-    color: #b3b3b3;
-  }
-  
-  .member-since {
-    margin-top: 30px;
-  }
-  
-  .member-title {
-    font-size: 24px;
-    color: #e5e5e5;
-    font-weight: bold;
-  }
-  
-  .membership-date {
-    font-size: 18px;
-    color: #b3b3b3;
-  }
-  
+  background-color: #141414;
+  color: white;
+  padding: 30px;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.profile-header {
+  border-bottom: 1px solid #444;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.profile-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #e5e5e5;
+}
+
+.profile-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.profile-left {
+  flex: 1;
+  display: flex;
+  gap: 20px;
+}
+
+.profile-avatar {
+  flex-shrink: 0;
+}
+
+.avatar-img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #e50914;
+}
+
+.profile-info {
+  flex-grow: 1;
+}
+
+.username {
+  font-size: 28px;
+  font-weight: bold;
+  color: #e5e5e5;
+}
+
+.email {
+  font-size: 18px;
+  color: #b3b3b3;
+}
+
+.profile-right {
+  flex: 1;
+}
+
+.plan-section {
+  margin-bottom: 30px;
+}
+
+.plan-title {
+  font-size: 24px;
+  color: #e5e5e5;
+  font-weight: bold;
+}
+
+.plan-type {
+  font-size: 20px;
+  color: #999;
+}
+
+.plan-end {
+  font-size: 16px;
+  color: #b3b3b3;
+}
+
+.member-since {
+  margin-top: 30px;
+}
+
+.member-title {
+  font-size: 24px;
+  color: #e5e5e5;
+  font-weight: bold;
+}
+
+.membership-date {
+  font-size: 18px;
+  color: #b3b3b3;
+}
+
+/* Styles for Email Editing */
+.email-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.view-email-section,
+.edit-email-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.edit-btn,
+.save-btn {
+  background: none;
+  border: 1px solid #888;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.edit-btn:hover,
+.save-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #fff;
+}
+
+.email-input {
+  background-color: #333;
+  border: 1px solid #888;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 250px; /* Adjust width as needed */
+}
+
+.email-input:focus {
+  outline: none;
+  border-color: #e50914;
+}
