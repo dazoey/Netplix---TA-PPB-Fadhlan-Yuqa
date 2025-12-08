@@ -35,7 +35,7 @@ const Home = () => {
       return () => clearInterval(intervalId);
     }
   }, [topRatedMovies]);
-
+  // Update featured movie when currentIndex changes
   useEffect(() => {
     if (topRatedMovies.length > 0) {
       setFeaturedMovie(topRatedMovies[currentIndex]);
