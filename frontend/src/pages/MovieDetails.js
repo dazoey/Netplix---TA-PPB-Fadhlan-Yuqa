@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getMovieDetails } from "../api/tmdb"; // Ganti sesuai dengan API yang digunakan
 import "./MovieDetail.css";
+//adw
 
 const MovieDetail = () => {
   const { movieId } = useParams(); // Mengambil movieId dari URL
